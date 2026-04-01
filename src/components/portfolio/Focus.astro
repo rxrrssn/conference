@@ -1,0 +1,67 @@
+---
+import ExperienceItem from "./FocusItem.astro";
+import Heading from "../ui/Heading.astro";
+import { Icon } from "astro-icon/components";
+
+const EXPERIENCE = [
+{
+    title: "Improving Registration Completion",
+    company: "Student Progression",
+    date: "Example",
+    description:
+      "Students often reach registration but stop due to unresolved holds without clear next steps. I’m working on identifying students with active holds and aligning outreach to explain the specific issue and how to resolve it. The goal is to move students from intent to completed registration more consistently.",
+  },
+  {
+    title: "Improving First-Contact Resolution",
+    company: "Contact Center Operations",
+    date: "Example",
+    description:
+      "Students often reach registration but stop due to unresolved holds without clear next steps. I’m working on identifying students with active holds and aligning outreach to explain the specific issue and how to resolve it. The goal is to move students from intent to completed registration more consistently.",
+  },
+  {
+    title: "Unifying Student Communication",
+    company: "Communication Strategy",
+    date: "Example",
+    description:
+      "Students receive messages from multiple systems with inconsistent timing and tone. I’m working on aligning chatbot, contact center, and outreach messaging so communication feels coordinated and supports the same next steps instead of competing for attention.",
+  },
+  {
+    title: "Reducing Operational Friction",
+    company: "Systems + Workflow Design",
+    date: "Example",
+    description:
+      "Staff often rely on manual steps across disconnected systems to complete routine work. I’m focused on simplifying workflows and improving visibility so teams can support students more efficiently without duplicating effort or switching between multiple tools.",
+  },
+];
+---
+
+<section class="py-8 px-8 max-md:py-4 mb-4 scroll-m-16" id="experience">
+  <div class="flex flex-col pt-8 max-w-4xl mx-auto">
+    <div class="flex gap-4 items-center justify-center">
+      <Icon class="text-3xl dark:text-white text-blacktext" name="briefcase" />
+      <Heading textGradient="Work" text="Current" level={2} />
+    </div>
+
+    <div class="relative max-md:mt-0 mt-8" aria-label="Examples of Current Focuses">
+      <ol class="relative mt-10">
+        {
+          EXPERIENCE.map((experience, index) => (
+            <li>
+              <article
+                role="article"
+                aria-labelledby={`experience-title-${index}`}
+              >
+                <div
+                  class="flex flex-col gap-2  text-zinc-00 dark:text-zinc-300 md:col-span-3"
+                  aria-describedby={`experience-title-${index}`}
+                >
+                  <ExperienceItem {...experience} />
+                </div>
+              </article>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,34 @@
+{
+  "profileImage": "/images/tjh-hs.webp",
+  "profileAlt": "Photo of Travis",
+  "profileLink": "",
+  "profileTitle": "Success Operations Analyst",
+  "profileName": "Travis Hornbuckle",
+  "github": "https://www.github.com",
+  "githubText": "",
+  "portfolioImage": "/images/portfolio.webp",
+  "email": "thornbuc@slcc.edu",
+  "linkedin": "https://www.linkedin.com/in/hornbucklet/",
+  "instagram": "https://instagram.com",
+  "youtube": "https://youtube.com",
+  "alias": "Travis Hornbuckle",
+  "contactSectionTitle": "",
+  "contactSectionSubtitle": "",
+  "contactSectionButtonText": "",
+  "contactSectionButtonIcon": "paperplane",
+  "techsTitle": "Schools",
+  "instagramIconName": "instagram",
+  "youtubeIconName": "youtube",
+  "githubIconName": "github",
+  "linkedinIconName": "linkedin",
+  "emailIconName": "envelope",
+  "hobbies": [
+    ""
+  ],
+  "pageTitle": "Travis Hornbuckle",
+  "pageDescription": "Is an educational and work experience portfolio of Travis James, a Program Associate and Psychology Student. It showcases his passion for development and technology, featuring projects, skills, and contact information.",
+  "OGImage": {
+    "url": "/images/imagedefault.webp",
+    "alt": ""
+  }
+}
